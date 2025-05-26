@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Personagens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://i.imgur.com/yyxOH9D.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+      width: 90%;
+      text-align: left;
+      border: 2px solid #fdd835;
+    }
+
+    h2 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #fdd835;
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      cursor: default;
+    }
+
+    /* Custom bullet with golden wand icon */
+    ul li::before {
+      content: "🪄";
+      position: absolute;
+      left: 0;
+      color: #fdd835;
+      font-size: 20px;
+      top: 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #4527a0;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: #7e57c2;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #d1c4e9;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      ul {
+        font-size: 16px;
+      }
+
+      a {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🧙‍♀️ Personagens Principais</h2>
+    <ul>
+      <li>Harry Potter</li>
+      <li>Hermione Granger</li>
+      <li>Rony Weasley</li>
+      <li>Alvo Dumbledore</li>
+      <li>Lord Voldemort</li>
+    </ul>
+    <a href="index.html">🔙 Voltar ao Início</a>
+  </div>
+</body>
+</html>
+
